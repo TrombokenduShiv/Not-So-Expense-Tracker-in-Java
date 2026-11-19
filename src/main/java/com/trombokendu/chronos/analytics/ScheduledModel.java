@@ -1,0 +1,1 @@
+package com.trombokendu.chronos.analytics;import java.time.*;import java.util.*;import java.util.random.*;public final class ScheduledModel implements SpendModel{private final Map<Integer,Double> monthly;public ScheduledModel(Map<Integer,Double> m){monthly=Map.copyOf(m);}public double sampleDaily(RandomGenerator r,LocalDate d){return monthly.getOrDefault(d.getDayOfMonth(),0.0);}}

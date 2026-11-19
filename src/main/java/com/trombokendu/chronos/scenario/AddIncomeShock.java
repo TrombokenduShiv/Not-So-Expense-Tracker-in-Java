@@ -1,0 +1,1 @@
+package com.trombokendu.chronos.scenario;import com.trombokendu.chronos.analytics.*;import java.time.*;import java.util.random.*;public record AddIncomeShock(LocalDate date,double amount) implements Policy{public SpendModel wrap(SpendModel b){return (r,d)->b.sampleDaily(r,d)-(d.equals(date)?amount:0);}}

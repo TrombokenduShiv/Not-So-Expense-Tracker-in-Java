@@ -1,0 +1,1 @@
+package com.trombokendu.chronos.concurrency;import com.trombokendu.chronos.domain.*;import com.trombokendu.chronos.ledger.*;import java.util.concurrent.*;public record WriteCommand(LedgerEvent event,CompletableFuture<StoredEvent> result){}

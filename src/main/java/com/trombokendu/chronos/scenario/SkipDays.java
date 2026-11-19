@@ -1,0 +1,1 @@
+package com.trombokendu.chronos.scenario;import com.trombokendu.chronos.analytics.*;import java.time.*;import java.util.random.*;public record SkipDays(int fromDay,int toDay) implements Policy{public SpendModel wrap(SpendModel b){return (r,d)->d.getDayOfMonth()>=fromDay&&d.getDayOfMonth()<=toDay?0:b.sampleDaily(r,d);}}

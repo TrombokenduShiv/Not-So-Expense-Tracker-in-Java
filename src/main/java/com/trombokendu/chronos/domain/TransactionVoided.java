@@ -1,0 +1,1 @@
+package com.trombokendu.chronos.domain; import java.time.*;import java.util.*; public record TransactionVoided(UUID eventId,Instant at,UUID originalEventId,String reason) implements LedgerEvent {public TransactionVoided{Objects.requireNonNull(eventId);Objects.requireNonNull(at);Objects.requireNonNull(originalEventId);reason=Objects.requireNonNullElse(reason,"");}}

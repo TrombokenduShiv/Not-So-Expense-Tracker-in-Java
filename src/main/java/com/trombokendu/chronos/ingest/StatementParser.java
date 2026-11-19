@@ -1,0 +1,1 @@
+package com.trombokendu.chronos.ingest;import java.nio.file.*;import java.util.*;import com.trombokendu.chronos.domain.*;public abstract class StatementParser{public abstract List<LedgerEvent> parse(Path file);}

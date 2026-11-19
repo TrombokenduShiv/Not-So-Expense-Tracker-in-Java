@@ -1,0 +1,1 @@
+package com.trombokendu.chronos.analytics;public final class Ewma{private final double alpha;private boolean init;private double value;public Ewma(double a){if(a<=0||a>1)throw new IllegalArgumentException("alpha must be in (0,1]");alpha=a;}public double update(double x){value=init?alpha*x+(1-alpha)*value:x;init=true;return value;}public double value(){return value;}}

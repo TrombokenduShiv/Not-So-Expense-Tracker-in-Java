@@ -1,0 +1,1 @@
+package com.trombokendu.chronos.analytics;import java.time.*;public record ForecastResult(double breachProbability,double budgetBreachProbability,LocalDate[] runwayP10,LocalDate[] runwayP50,LocalDate[] runwayP90,double[][] percentileBands,double expectedEndBalance){}

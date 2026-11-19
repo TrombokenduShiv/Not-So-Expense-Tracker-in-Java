@@ -1,0 +1,1 @@
+package com.trombokendu.chronos.analytics;public final class OnlineStats{private long n;private double mean,m2;public void update(double x){n++;double d=x-mean;mean+=d/n;m2+=d*(x-mean);}public long count(){return n;}public double mean(){return n==0?0:mean;}public double variance(){return n<2?0:m2/(n-1);}public double stdDev(){return Math.sqrt(variance());}}

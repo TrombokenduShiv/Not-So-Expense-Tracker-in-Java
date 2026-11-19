@@ -1,0 +1,1 @@
+package com.trombokendu.chronos.domain; import java.time.*;import java.util.*; public record BudgetSet(UUID eventId,Instant at,Money monthlyBudget) implements LedgerEvent {public BudgetSet{Objects.requireNonNull(eventId);Objects.requireNonNull(at);Objects.requireNonNull(monthlyBudget);if(!monthlyBudget.isPositive())throw new ValidationException("Budget must be positive");}}

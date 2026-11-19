@@ -1,0 +1,4 @@
+date,kind,category,amount,note
+2026-11-01,EXPENSE,Food,245.50,Lunch
+2026-11-02,EXPENSE,Travel,80.00,Metro
+2026-11-03,INCOME,Allowance,1500.00,Monthly allowance
